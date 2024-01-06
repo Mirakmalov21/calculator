@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right,#404a4e, rgb(31, 22, 50), rgb(77, 33, 50) )
+}
+
+.header{
+    margin-top: 100px; 
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.display {
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: right;
+    text-align: end;
+    outline: none;
+    width: 320px;
+    height: 100px;
+    background-color: rgb(21, 11, 32);
+    color: #fff;
+    font-size: 35px;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 3px solid rgb(31, 6, 88);
+}
+
+.display::placeholder {
+    color: #fff;
+}
+
+.main {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid: auto/ auto auto auto auto;
+}
+
+.boxes {
+    width: 80px;
+    height: 80px;
+    background-color:antiquewhite;
+    border: none;
+    font-size: 25px;
+    transition: 0.2s all ease;
+}
+
+.box_1_4 , .box_2_4, .box_3_4, .box_4_4{
+    background-color: rgb(31, 19, 44);
+    color: #fff;
+}
+
+.box_5_4 {
+    background-color: coral;
+    border-radius: 0 0 15px 0;
+}
+
+.box_5_1 {
+    border-radius: 0 0 0 15px;
+}
+
+.boxes:hover {
+    cursor: pointer;
+    background-color: coral;
+}
+
+.box_1_4:hover , .box_2_4:hover, .box_3_4:hover, .box_4_4:hover{
+    background-color: #fff;
+    color: rgb(31, 19, 44);
+}
+  
+.box_5_4:hover {
+    background-color:  rgb(31, 19, 44);
+    color: #fff;
+}
